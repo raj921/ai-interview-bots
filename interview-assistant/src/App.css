@@ -1,0 +1,14 @@
+.App {
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+
+.ant-tabs {
+  background: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.ant-tabs-nav {
+  margin-bottom: 30px !important;
+}

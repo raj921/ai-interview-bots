@@ -1,0 +1,146 @@
+# Sample Resume Text (For Creating Test PDFs)
+
+Use this content to create test PDF/DOCX files for testing the resume parser.
+
+---
+
+## Sample Resume 1 - Complete Information
+
+John Doe
+Full Stack Developer
+
+Contact Information:
+Email: john.doe@example.com
+Phone: +1 (555) 123-4567
+
+Professional Summary:
+Experienced Full Stack Developer with 5+ years building scalable web applications using React, Node.js, and modern cloud technologies.
+
+Skills:
+- Frontend: React, Redux, JavaScript, TypeScript, HTML5, CSS3
+- Backend: Node.js, Express, REST APIs, GraphQL
+- Databases: MongoDB, PostgreSQL, MySQL
+- Tools: Git, Docker, AWS, CI/CD
+
+Experience:
+Senior Full Stack Developer | TechCorp Inc. | 2020 - Present
+- Built responsive web applications using React and Redux
+- Developed RESTful APIs with Node.js and Express
+- Implemented authentication and authorization systems
+- Collaborated with cross-functional teams
+
+Education:
+Bachelor of Science in Computer Science
+University of Technology | 2018
+
+---
+
+## Sample Resume 2 - Missing Phone
+
+Jane Smith
+Frontend Developer
+
+jane.smith@email.com
+
+Summary:
+Passionate frontend developer specializing in React and modern JavaScript frameworks.
+
+Skills:
+React, Vue.js, Angular, JavaScript, CSS, HTML
+
+Experience:
+Frontend Developer at StartupCo (2021-Present)
+- Developed user interfaces using React
+- Implemented state management with Redux
+- Collaborated with UX designers
+
+Education:
+BS Computer Science, State University, 2020
+
+---
+
+## Sample Resume 3 - Missing Email
+
+Michael Johnson
+Backend Engineer
+Phone: 555-987-6543
+
+Professional Experience:
+Backend Engineer specializing in Node.js, Python, and microservices architecture.
+
+Technical Skills:
+- Languages: JavaScript, Python, Java
+- Frameworks: Express, Django, Spring Boot
+- Databases: PostgreSQL, MongoDB, Redis
+- Cloud: AWS, Docker, Kubernetes
+
+Work History:
+Backend Developer | DataSystems Corp | 2019-Present
+Built scalable backend services and APIs
+
+Education:
+Master's in Software Engineering | Tech University | 2019
+
+---
+
+## Sample Resume 4 - Missing Name
+
+Email: candidate@example.com
+Phone: (123) 456-7890
+
+Full Stack Developer
+
+Professional Profile:
+Software engineer with expertise in full-stack web development and cloud technologies.
+
+Core Competencies:
+- Web Development: React, Node.js, Express
+- Database Management: SQL, NoSQL
+- DevOps: Docker, Kubernetes, CI/CD
+- Agile Methodologies
+
+Employment:
+Software Engineer | WebSolutions Inc. | 2018 - Present
+Developed and maintained web applications
+
+Academic Background:
+Computer Science Degree | University College | 2017
+
+---
+
+## How to Use These Samples
+
+1. Copy the text above into a text editor
+2. Save as .txt first
+3. Use online converters or Word to create PDF/DOCX:
+   - For PDF: Use "Print to PDF" or online converter
+   - For DOCX: Paste into Microsoft Word and save
+
+4. Test scenarios:
+   - Sample 1: All fields present → Should start immediately
+   - Sample 2: Missing phone → Should ask for phone
+   - Sample 3: Missing email → Should ask for email
+   - Sample 4: Missing name → Should ask for name
+
+5. For testing multiple missing fields:
+   - Create a resume with just a phone number
+   - System should collect name and email via chat
+
+## Tips for Creating Test Resumes
+
+1. **Keep formatting simple**: Plain text works best for parsing
+2. **Include clear labels**: "Email:", "Phone:", etc.
+3. **Use standard formats**:
+   - Email: name@domain.com
+   - Phone: (123) 456-7890 or +1-123-456-7890
+4. **Put name at the top**: First line is usually detected as name
+5. **Avoid images**: Parser only extracts text
+
+## Expected Parsing Results
+
+| Sample | Name | Email | Phone | Missing Fields |
+|--------|------|-------|-------|---------------|
+| 1 | John Doe | john.doe@example.com | +1 (555) 123-4567 | None |
+| 2 | Jane Smith | jane.smith@email.com | Not found | Phone |
+| 3 | Michael Johnson | Not found | 555-987-6543 | Email |
+| 4 | Not found | candidate@example.com | (123) 456-7890 | Name |

@@ -1,0 +1,16 @@
+.interviewer-container {
+  padding: 20px;
+}
+
+.candidate-details {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.answer-section {
+  margin-bottom: 20px;
+}
+
+.answer-section:last-child {
+  margin-bottom: 0;
+}
