@@ -27,3 +27,4 @@ This repository contains the interview-assistant submodule with the main applica
 - AI/ML integration
 - Redux for state management
 - Git submodules for project organization
+# ai-interview-bot
